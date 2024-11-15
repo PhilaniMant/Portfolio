@@ -1,25 +1,44 @@
 body{
     background-color: rgba(207, 207, 207, 0.805);
 }
-
-nav ul{
-    list-style-type: none;
-    background-color: hsl(0, 4%, 37%);
-    height: 80px;
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
+.navbar{
+    text-align: right;
+}
+p{
+    text-align: justify;
 }
 
-nav ul li{
-    display: inline block;
-    line-height: 80px;
-    margin:0 5px ;
-}
-nav a{
-    color: rgb(255, 0, 0);
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-    text-align: center;
-}
+nav {
+
+        background-color: #333;
+    
+        padding: 1rem;
+    
+    }
+
+    
+    nav ul {
+    
+       list-style-type: none;
+    
+        padding: 0;
+    
+       margin: 0;
+    
+        display: flex;
+    
+        justify-content: space-around;
+    
+    }
+    
+
+    
+    nav a {
+    
+       color: white;
+    
+        text-decoration: none;
+    
+        font-size: 1rem;
+    
+    }
