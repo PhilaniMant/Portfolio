@@ -1,12 +1,18 @@
 body{
-    background-color: rgba(207, 207, 207, 0.805);
+    background-image: url(images/wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-.navbar{
-    text-align: right;
+.images{
+    width: 15%;
+    position: absolute;
+    border-radius: 40px;
 }
-p{
+.header{
     text-align: center;
 }
+
 
 nav {
         background-color: #333;
@@ -17,7 +23,9 @@ nav {
     nav ul {
     
        list-style-type: none;
+    
         padding: 0;
+    
        margin: 0;
         display: flex;
         justify-content: space-around;
