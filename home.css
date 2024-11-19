@@ -4,11 +4,18 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-.images{
-    width: 15%;
-    position: absolute;
-    border-radius: 40px;
+
+
+.images {
+    float: right;
+    margin: 5%;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the element */
+    width: 20%;/* Optional: Adds some space around the image */
+    mix-blend-mode: multiply; /* You can also use overlay, screen, etc. */
+
 }
+
 .header{
     text-align: center;
 }
