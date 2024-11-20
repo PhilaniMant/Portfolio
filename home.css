@@ -12,14 +12,12 @@ body{
     border-radius: 50%; /* Makes the image circular */
     object-fit: cover; /* Ensures the image covers the element */
     width: 20%;/* Optional: Adds some space around the image */
-    mix-blend-mode: multiply; /* You can also use overlay, screen, etc. */
-
 }
 
-.header{
-    text-align: center;
-}
 
+.about{
+    text-align: center; 
+}
 
 nav {
         background-color: #333;

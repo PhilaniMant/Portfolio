@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 10px;
+    background: linear-gradient(135deg, #858585, #000000);
+}
+
+nav {
+    width: 100%;
+    background-color: #333;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Full viewport height */
+    background-color: #f4f4f4; /* Optional, for a background color */
+}
+
+.content {
+    text-align: center; /* Centers the text inside the content div */
+    padding: 20px;
+    border: 1px solid #ccc; /* Optional, for styling */
+    background-color: white; /* Optional, for styling */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional, for a soft shadow */
+}
