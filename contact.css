@@ -1,21 +1,15 @@
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-
-body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #9b9b9b, #171718);
+    color: #fff;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start;
-    min-height: 100vh;
-    padding: 10px;
-    background: linear-gradient(135deg, #858585, #000000);
-}
-
-nav {
+  }
+  nav {
     width: 100%;
     background-color: #333;
     padding: 1rem;
@@ -40,18 +34,46 @@ nav a {
 }
 
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh; /* Full viewport height */
-    background-color: #f4f4f4; /* Optional, for a background color */
-}
-
-.content {
-    text-align: center; /* Centers the text inside the content div */
+  .contact-container {
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
     padding: 20px;
-    border: 1px solid #ccc; /* Optional, for styling */
-    background-color: white; /* Optional, for styling */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional, for a soft shadow */
-}
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  .contact-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+   color: #0c0c0c; 
+  }
+
+  .contact-container input,
+  .contact-container textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 6px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #e7e5e5;
+    color: #fff;
+  }
+
+  .contact-container input::placeholder,
+  .contact-container textarea::placeholder {
+    color: #030303;
+  }
+
+  .contact-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
