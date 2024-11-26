@@ -1,36 +1,44 @@
 body{
     background-color: rgba(207, 207, 207, 0.805);
 }
-.navbar{
-    text-align: right;
-}
-body{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
 
 .header{
  align-items: center;
- padding-top: 8%;
+ padding-top: 4%;
+ padding-left: 10%;
 }
 
 .images {
+    display: flex;
     float: right;
     margin: 5%;
     border-radius: 50%; /* Makes the image circular */
     object-fit: cover; /* Ensures the image covers the element */
     width: 20%;/* Optional: Adds some space around the image */
 }
-
-
-.about{
-    text-align: center; 
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px; /* Ensures there is space for the fixed nav */
+    width: 500px;
+    background-color: #fff;
+    padding: 25px 30px;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.container .title{
+    padding: auto;
+    margin: auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.title h2 ul{
+    letter-spacing: 0.3px ;
+}
 nav {
     width: 100%;
-    background-color: #ffffff;
+    background-color: #000000;
     padding: 1rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: fixed;
@@ -47,37 +55,22 @@ nav ul {
 }
 
 nav a {
-    color: rgb(8, 8, 8);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 1rem;
 }
+
 p{
     text-align: center;
 }
 
-nav {
-        background-color: #333;
-        padding: 1rem;
-    }
-
-    
-    nav ul {
-    
-       list-style-type: none;
-        padding: 0;
-       margin: 0;
+    footer {
         display: flex;
-        justify-content: space-around;
-    }
-    
-
-    
-    nav a {
-    
-       color: white;
-    
-        text-decoration: none;
-    
-        font-size: 1rem;
-    
-    }
+        width: 100%;
+        max-width: 1200px;
+        justify-content: center;
+        padding: 5px;
+        position: relative;
+        background-color: #030303;
+        color: #fff;
+      }

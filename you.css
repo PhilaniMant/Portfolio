@@ -12,7 +12,7 @@ body {
     justify-content: flex-start;
     min-height: 100vh;
     padding: 10px;
-    background: linear-gradient(135deg, #000000, #7c7c7c);
+    background: linear-gradient(135deg, #ffffff, #777777);
 }
 
 nav {
