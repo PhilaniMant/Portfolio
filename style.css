@@ -4,6 +4,53 @@ body{
 .navbar{
     text-align: right;
 }
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header{
+ align-items: center;
+ padding-top: 8%;
+}
+
+.images {
+    float: right;
+    margin: 5%;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the element */
+    width: 20%;/* Optional: Adds some space around the image */
+}
+
+
+.about{
+    text-align: center; 
+}
+
+nav {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: rgb(8, 8, 8);
+    text-decoration: none;
+    font-size: 1rem;
+}
 p{
     text-align: center;
 }
