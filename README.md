@@ -15,7 +15,6 @@ The website serves as a professional portfolio for Philani Mancotywa, providing 
 ## Features
 
 - **Home Page**: Welcomes visitors with a personalized introduction.
-- **About Page**: Highlights background information.
 - **Personal Info Page**: Shares detailed personal information.
 - **Resume Page**: Displays the resume of the individual.
 - **Contact Page**: Provides means to reach out.
