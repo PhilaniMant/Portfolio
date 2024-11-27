@@ -22,7 +22,7 @@ body{
 .images {
     display: flex;
     float: right;
-    margin: 5%;
+    margin: 10%;
     border-radius: 50%; /* Makes the image circular */
     object-fit: cover; /* Ensures the image covers the element */
     width: 20%;/* Optional: Adds some space around the image */
@@ -79,10 +79,7 @@ p{
     margin-left: 20%;
     padding-bottom: 4%;
 }
-
-
     footer {
-        display: flex;
         max-width: max-content;
         max-width: 1800px;
         justify-content: center;
@@ -90,3 +87,15 @@ p{
         background-color: #030303;
         color: #fff;
       }
+
+      /* Responsive media query code for mobile devices */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
+}
+
