@@ -5,13 +5,18 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background-color: rgb(133, 156, 182);
+    background: linear-gradient(135deg, #ffffff, #777777);
 }
 
 .header{
  align-items: center;
- padding-top: 4%;
- padding-left: 10%;
+ padding-top: 6%;
+ padding-left: 21%;
+}
+
+.title{
+    margin-top: 7%;
+    margin-left: 16%;
 }
 
 .images {
@@ -25,16 +30,17 @@ body{
 .container {
     display: flex;
     justify-content: space-between;
-    margin-top: 80px; /* Ensures there is space for the fixed nav */
     width: 500px;
     padding: 25px 30px;
     margin-bottom: 5%;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
-.container .title{
+h3{
+    font-size: 30pt;
+    margin-bottom: 20px;
     font-display: bold;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+p {  }
 
 .title h2 ul{
     letter-spacing: 0.3px ;
@@ -64,16 +70,14 @@ nav a {
 }
 
 p{
+    margin-top: 0;
     text-align: center;
 }
 .icons{
     text-align: left;
     font-size: 40pt;
-    margin-left: 14%;
+    margin-left: 20%;
     padding-bottom: 4%;
-}
-.fa-brands .fa-instagram {
-    color: #f37f3ce5;
 }
 
 
