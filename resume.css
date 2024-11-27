@@ -12,7 +12,8 @@ body {
     justify-content: flex-start;
     min-height: 100vh;
     padding: 10px;
-    background: linear-gradient(135deg, #ffffff, #cfc8c8);
+    background-color: rgb(133, 156, 182);
+    
 }
 
 nav {
@@ -34,7 +35,7 @@ nav ul {
 }
 
 nav a {
-    
+
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 1rem;
@@ -71,7 +72,6 @@ nav a {
     height: 3px;
     width: 30px;
     border-radius: 5px;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
 
 .content section {

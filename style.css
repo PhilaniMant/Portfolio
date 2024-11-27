@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 body{
     background-color: rgb(133, 156, 182);
 }
@@ -21,15 +27,12 @@ body{
     justify-content: space-between;
     margin-top: 80px; /* Ensures there is space for the fixed nav */
     width: 500px;
-    background-color: #fff;
     padding: 25px 30px;
     margin-bottom: 5%;
-    border-radius: 5px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 .container .title{
-    padding: auto;
-    margin: auto;
+    font-display: bold;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -63,6 +66,16 @@ nav a {
 p{
     text-align: center;
 }
+.icons{
+    text-align: left;
+    font-size: 40pt;
+    margin-left: 14%;
+    padding-bottom: 4%;
+}
+.fa-brands .fa-instagram {
+    color: #f37f3ce5;
+}
+
 
     footer {
         display: flex;
