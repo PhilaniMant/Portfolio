@@ -6,11 +6,13 @@
 }
 body{
     background: linear-gradient(135deg, #ffffff, #777777);
+    margin: 0;
+    padding: 0;
 }
 
 .header{
  align-items: center;
- padding-top: 6%;
+ padding-top: 12%;
  padding-left: 21%;
 }
 
@@ -20,12 +22,14 @@ body{
 }
 
 .images {
-    display: flex;
+    display: block;
     float: right;
+    height: auto;
     margin: 10%;
     border-radius: 50%; /* Makes the image circular */
     object-fit: cover; /* Ensures the image covers the element */
     width: 20%;/* Optional: Adds some space around the image */
+
 }
 .container {
     display: flex;
@@ -35,12 +39,11 @@ body{
     margin-bottom: 5%;
 }
 h3{
-    font-size: 30pt;
-    margin-bottom: 20px;
-    font-display: bold;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 30pt;
+margin-bottom: 20px;
+font-display: bold;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-p {  }
 
 .title h2 ul{
     letter-spacing: 0.3px ;
@@ -53,6 +56,7 @@ nav {
     position: fixed;
     top: 0;
     z-index: 1000;
+    overflow: hidden;
 }
 
 nav ul {
@@ -67,6 +71,9 @@ nav a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 1rem;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
 }
 
 p{
@@ -88,14 +95,26 @@ p{
         color: #fff;
       }
 
-      /* Responsive media query code for mobile devices */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-    .left-column,
-    .right-column {
-        width: 100%;
-    }
+    @media screen and (max-width: 80px) { 
+        .navbar ul { 
+            flex-direction: column; 
+        } 
+        .header, .container, .icons, footer 
+        {
+             padding: 20px; 
+            } 
+            .images{
+                flex-direction: column;
+            }
+        .header h1 {
+             font-size: 10px; 
+            }
+         .header h2 { 
+            font-size: 6px; }
+          .title h3 { 
+            font-size: 8px; } 
+          .container p { font-size: 14px; } 
+  .navbar a { padding: 5px 8px; } 
 }
+
 
