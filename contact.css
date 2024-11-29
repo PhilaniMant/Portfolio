@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 body {
     margin: 0;
     padding: 0;
@@ -9,25 +13,28 @@ body {
     justify-content: center;
     align-items: center;
   }
-  nav {
+  .navbar-links {
     width: 100%;
+    display: flex;
     background-color: #333;
     padding: 1rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
+    padding: 10px 20px;
     z-index: 1000;
 }
 
-nav ul {
+.navbar-links ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    gap: 20px;
     display: flex;
     justify-content: space-around;
 }
 
-nav a {
+.navbar-links a {
     color: white;
     text-decoration: none;
     font-size: 1rem;
