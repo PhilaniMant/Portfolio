@@ -1,129 +1,143 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    padding: 10px;
-    background: linear-gradient(135deg, #ffffff, #c7c6c6);
-}
-
-nav {
+.section-bg {
     width: 100%;
+    min-height: 100vh;
+    background: #222;
+    margin-bottom: 0;
+    padding: 80px 0
+}
+
+.navbar-links {
+    width: 100%;
+    display: flex;
     background-color: #333;
     padding: 1rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
+    padding: 10px 20px;
     z-index: 1000;
 }
 
-nav ul {
+.navbar-links ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    gap: 20px;
     display: flex;
     justify-content: space-around;
 }
 
-nav a {
+.navbar-links a {
     color: white;
     text-decoration: none;
     font-size: 1rem;
 }
 
-.container {
-    max-width: 700px;
-    width: 100%;
-    background-color: #ffffff63;
-    padding: 25px 30px;
-    border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-    margin-top: 20px; /* Added for spacing between nav and container */
+   
+/* Social Icons in Section Background */
+.section-bg .social i {
+    color: #e5e5e5;
+    font-size: 16px; /* Decrease font size for smaller icons */
+    margin-right: 10px;
+    transition: 0.5s;
+}
+       
+.section-bg .social i:hover {
+    color: #007ced;
+    transform: rotate(360deg);
+}
+       
+    
+/* Wrapper for content */
+.wrapper {
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+    
+/* Header Style */
+header {
+    padding: 40px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+     
+/* Logo Icon Styling */
+.logo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.container .title {
-    font-size: 25px;
-    font-weight: 500;
-    position: relative;
+#about {
+    display: block;
+    padding: 150px 0 40px; /* Increase top padding to push content lower */
+    margin: 0;
+    background: #222;
 }
 
-.content form .user-details {
+
+ /* About section spacing */
+.about-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 20px 0 12px 0;
-}
-
-form .user-details .input-box {
-    margin-bottom: 15px;
-    width: calc(100% / 2 - 20px);
-}
-
-form .input-box span.details {
-    display: block;
-    font-weight: 500;
-    margin-bottom: 5px;
-}
-
-.user-details .input-box input {
-    height: 45px;
-    width: 100%;
-    outline: none;
-    font-size: 16px;
-    border-radius: 5px;
-    padding-left: 15px;
-    border: 1px solid #ccc;
-    border-bottom-width: 2px;
-    transition: all 0.3s ease;
-}
-
-form .category {
-    display: flex;
-    width: 80%;
-    margin: 14px 0;
-    justify-content: space-between;
-}
-
-form .category label {
-    display: flex;
     align-items: center;
-    cursor: pointer;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 40px;
+    padding: 30px 0;
 }
 
-form .category label .dot {
-    height: 18px;
-    width: 18px;
-    border-radius: 50%;
-    margin-right: 10px;
-    background: #d9d9d9;
-    border: 5px solid transparent;
-    transition: all 0.3s ease;
+.about-image {
+    margin-top: 30px;
 }
 
-form .button {
-    height: 45px;
-    margin: 35px 0;
+
+/* Spacing between sections */
+#about, #resume, #contact {
+    padding-top: 160px;
+    margin-top: -60px;
 }
 
-form .button input {
-    height: 100%;
-    width: 100%;
-    border-radius: 5px;
-    border: none;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
-}
-
+       
+#about h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    color: #e5e5e5;
+    font-size: 2rem;
+    }
+    
+    
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    }
+    
+    
+.about-text {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #e5e5e5; /* Ensure the text is readable */
+    }
+    
+    
+.about-image {
+    flex: 1;
+    text-align: center;
+    }
+    
+    
+.about-image img {
+    border-radius: 15px;
+    width: 250px; /* Adjust height for oval shape */
+    height: 250px; /* Ensure image fills the container without distortion */
+    object-fit: contain; /* Create an oval shape */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better effect */
+    }

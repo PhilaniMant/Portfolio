@@ -15,17 +15,18 @@ body {
     background-color: rgb(133, 156, 182);
 
 }
-nav {
+.navbar-links {
     width: 100%;
+    display: flex;
     background-color: #000000;
-    padding: 1rem;
+    justify-content: space-between;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
     z-index: 1000;
 }
 
-nav ul {
+.navbar-links ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -33,7 +34,7 @@ nav ul {
     justify-content: space-around;
 }
 
-nav a {
+.navbar-links a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 1rem;
