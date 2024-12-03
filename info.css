@@ -1,18 +1,29 @@
-.section-bg {
-    width: 100%;
-    min-height: 100vh;
-    background: #222;
-    margin-bottom: 0;
-    padding: 80px 0
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #ffffff, #777777);
+    }
+
+p{
+    color: rgb(0, 0, 0);
+}
 .navbar-links {
     width: 100%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #333;
-    padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: fixed;
     top: 0;
     padding: 10px 20px;
     z-index: 1000;
@@ -20,35 +31,17 @@
 
 .navbar-links ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
     gap: 20px;
     display: flex;
-    justify-content: space-around;
 }
 
 .navbar-links a {
-    color: white;
     text-decoration: none;
-    font-size: 1rem;
+    color: #fff;
+    transition: color 0.3s;
 }
 
-   
-/* Social Icons in Section Background */
-.section-bg .social i {
-    color: #e5e5e5;
-    font-size: 16px; /* Decrease font size for smaller icons */
-    margin-right: 10px;
-    transition: 0.5s;
-}
-       
-.section-bg .social i:hover {
-    color: #007ced;
-    transform: rotate(360deg);
-}
-       
     
-/* Wrapper for content */
 .wrapper {
     width: 1280px;
     max-width: 95%;
@@ -56,7 +49,7 @@
     padding: 0 40px;
 }
     
-/* Header Style */
+
 header {
     padding: 40px 0 30px;
     display: flex;
@@ -72,25 +65,10 @@ header {
     align-items: center;
 }
 
-#about {
-    display: block;
-    padding: 150px 0 40px; /* Increase top padding to push content lower */
-    margin: 0;
-    background: #222;
-}
 
 
  /* About section spacing */
-.about-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    gap: 40px;
-    padding: 30px 0;
-}
+
 
 .about-image {
     margin-top: 30px;
@@ -107,7 +85,7 @@ header {
 #about h2 {
     text-align: left;
     margin-bottom: 20px;
-    color: #e5e5e5;
+    color: #000000;
     font-size: 2rem;
     }
     
@@ -117,14 +95,10 @@ header {
     flex-wrap: wrap;
     align-items: center;
     gap: 20px;
-    }
-    
-    
-.about-text {
     flex: 1;
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #e5e5e5; /* Ensure the text is readable */
+    color: #000000; /* Ensure the text is readable */
     }
     
     
@@ -135,7 +109,7 @@ header {
     
     
 .about-image img {
-    border-radius: 15px;
+    border-radius: 50%;
     width: 250px; /* Adjust height for oval shape */
     height: 250px; /* Ensure image fills the container without distortion */
     object-fit: contain; /* Create an oval shape */
