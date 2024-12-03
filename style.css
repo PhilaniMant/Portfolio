@@ -113,7 +113,7 @@ header, main, footer {
     right: 20px;
     width: 50px;
     height: 50px;
-    background-color: #4caf50;
+    background-color: #000000;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -149,7 +149,7 @@ header, main, footer {
 
 /* Header */
 .chatbot header {
-    background-color: #4caf50;
+    background-color: #000000;
     color: white;
     padding: 10px;
     font-size: 18px;
@@ -194,7 +194,7 @@ header, main, footer {
     margin-left: 10px;
     cursor: pointer;
     font-size: 24px;
-    color: #4caf50;
+    color: #000000;
 }
 
 /* Responsive Adjustments */
