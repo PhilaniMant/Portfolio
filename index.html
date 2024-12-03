@@ -4,12 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  
   <title>Document</title>
   <link rel="stylesheet"
    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
    crossorigin="anonymous" 
    referrerpolicy="no-referrer" />
+   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
 </head>
 <body>
   <nav class="navbar-links">
@@ -21,12 +24,12 @@
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="About.html">About</a></li>
-        <li><a href="cv.html">Education</a></li>
+        <li><a href="cv.html">Resume</a></li>
         <li><a href="contacts.html">Contact</a></li>
     </ul>
 </nav>
 
-<main>
+
     <div class="header">
         <img src="images/IMG-20240513-WA0086.jpg" class="images" alt="Profile Picture">
         <div>
@@ -39,24 +42,27 @@
     </div>
         </div>
     </div>
-</main>
 
-<div class="chatbot">
-    <header>chatbot</header>
-    <ul>
-    <li class="chat-income"> 
-<span class=" material symbols-outlined"> smart-toy</span>
-<p>hi there <br> how may I be of service</p>
-    </li>
+    <div id="chatbot-icon" class="chatbot-icon">
+        <span class="material-symbols-outlined">chat</span>
+    </div>
     
-    <li class="chat-outgoing"> 
-        <p>i need your help</p>
-        
-    </li>
-</div>
-</ul>
+    <!-- Chatbot Popup -->
+    <div id="chatbot" class="chatbot" style="display: none;">
+        <header>
+            Chatbot
+            <span id="close-btn" class="material-symbols-outlined">close</span>
+        </header>
+        <ul id="chat-window"></ul>
+        <div class="chat-input">
+            <textarea id="chat-message" placeholder="Enter a message..."></textarea>
+            <span id="send-btn" class="material-symbols-outlined">send</span>
+        </div>
+    </div>
 <footer>
     <p>© 2024 Capaciti</p>
 </footer>
+<script src="script.js"></script>
 </body>
+
 </html>
