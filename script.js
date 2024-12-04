@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const getResumeInfo = (query) => {
             switch (query.toLowerCase()) {
-                case 'skills':
+                case 'soft skills':
                     return Array.from(document.querySelectorAll('ul:nth-of-type(8) li')) // Adjust selector to match skills section
                         .map((li) => li.textContent)
                         .join(', ');
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         const generateResponse = (userMessage) => {
-            if (userMessage.toLowerCase().includes('soft skills')) {
+            if (userMessage.toLowerCase().includes('skills')) {
                 return getResumeInfo('soft skills') || "Sorry, I couldn't find the skills section.";
             } else if (userMessage.toLowerCase().includes('education')) {
                 return getResumeInfo('education') || "Sorry, I couldn't find the education section.";
