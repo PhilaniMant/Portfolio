@@ -72,4 +72,15 @@ nav a {
     color: #333;
 }
 
+@media (max-width: 768px) {
+    .navbar-links {
+        flex-direction: column; 
+        align-items: flex-start;
+        padding: 10px;
+    }
 
+    .navbar-links ul {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+}
