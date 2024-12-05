@@ -38,15 +38,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const getResumeInfo = (query) => {
             switch (query.toLowerCase()) {
                 case 'soft skills':
-                    return Array.from(document.querySelectorAll('ul:nth-of-type(8) li')) // Adjust selector to match skills section
-                        .map((li) => li.textContent)
-                        .join(', ');
+                    return  "Dependability, Time Management, Critical Thinking, Self-Awareness"
                 case 'education':
-                    return Array.from(document.querySelectorAll('section:nth-of-type(2) ul li'))
-                        .map((li) => li.textContent)
-                        .join('\n');
+                    return "Walter Sisulu University\n Diploma in Information and Communication Technology Applications Development \n 2021-2023"
                 case 'contact':
-                    return 'Email: mancotywap@gmail.com\nLinkedIn: https://www.linkedin.com/in/philani-mancotywa-727715297/';
+                    return 'Email: mancotywap@gmail.com\n number: 0683700855 ';
                 default:
                     return null;
             }
@@ -75,13 +71,13 @@ document.addEventListener('DOMContentLoaded', () => {
         sendButton.addEventListener('click', () => {
             const userMessage = chatMessage.value.trim();
             if (userMessage) {
-                addMessage(userMessage, 'User'); // Add user's message
+                addMessage(userMessage, 'You'); // Add user's message
                 chatMessage.value = ''; // Clear the input
 
                 // Generate and add chatbot's response
                 const botResponse = generateResponse(userMessage);
                 setTimeout(() => {
-                    addMessage(botResponse, 'Bot'); // Add bot's message
+                    addMessage(botResponse, 'Robot'); // Add bot's message
                 }, 500); // Add a slight delay for realism
             }
         });

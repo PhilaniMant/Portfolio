@@ -1,12 +1,13 @@
 *{
   margin: 0;
   padding: 0;
+
 }
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(120deg, #ffffff, #c9c9ca);
+    background: linear-gradient(120deg, #ffffff, #3c515e);
     color: #fff;
     height: 100vh;
     display: flex;
@@ -25,6 +26,7 @@ body {
     z-index: 1000;
 }
 
+
 .navbar-links ul {
     list-style-type: none;
     padding: 0;
@@ -39,6 +41,24 @@ body {
     text-decoration: none;
     font-size: 1rem;
 }
+
+.navbar-links ul li a:hover {
+  color: #112dca;
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+      flex-direction: column; 
+      align-items: flex-start;
+      padding: 10px;
+  }
+
+  .navbar-links ul {
+      flex-direction: column; 
+      gap: 10px; 
+  }
+}
+
 
 
   .contact-container {
