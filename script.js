@@ -85,3 +85,39 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Send button, chat message input, or chat window not found');
     }
 });
+
+// Select all the sections and navbar links
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.navbar-links a');
+
+// Function to check the scroll position and set active class
+function setActiveLink() {
+    let currentSection = '';
+
+    // Loop through all the sections
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        
+        // Check if the section is in the viewport
+        if (window.scrollY >= sectionTop - sectionHeight / 5) {
+            currentSection = section.getAttribute('id');
+        }
+    });
+
+    // Loop through all the navLinks and remove the active class
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        // Add the active class to the link that corresponds to the current section
+        if (link.getAttribute('href') === `#${currentSection}`) {
+            link.classList.add('active');
+        }
+    });
+}
+
+// Call the function when the page is scrolled
+window.addEventListener('scroll', setActiveLink);
+
+// Call the function on page load to set the correct initial state
+document.addEventListener('DOMContentLoaded', setActiveLink);
+
