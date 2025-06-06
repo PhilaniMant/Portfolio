@@ -5,191 +5,201 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   
-  <title>Document</title>
+  <title>Personl Portfolio</title>
   <link rel="stylesheet"
    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
    crossorigin="anonymous" 
    referrerpolicy="no-referrer" />
    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
-
 </head>
+
 <body>
-  
-    <a href="#" class="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </a>
-    <nav class="navbar-links">
-        <ul>
-            <li><a href="#home" id="link-home">Home</a></li>
-            <li><a href="#about" id="link-about">About</a></li>
-            <li><a href="#resume" id="link-resume">Resume</a></li>
-            <li><a href="#contact" id="link-contact">Contact</a></li>
-        </ul>
-</nav>
+<!-- Card Slider: Playing Card Game Effect -->
+<div id="card-slider" style="width:100%;display:flex;flex-direction:row;align-items:center;justify-content:center;min-height:600px;position:relative;">
 
-<section class="start"id="home" >
-    <div class="header">
-        <img src="images/IMG-20240513-WA0086.jpg" class="images" alt="Profile Picture">
-        <div>
-            <h1>PHILANI MANCOTYWA</h1>
-            <h2>Application/System/Web Developer</h2>
-            <div class="icons">
-        <a href="https://x.com/PHILANI_MAN_T"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/philani-mancotywa-727715297/"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/PhilaniMant"><i class="fa-brands fa-square-github"></i></a>
-    </div>
-        </div>
-    </div>
-</section>
-    <section id="about">
-        <div class="about-content">
-            <h2>About</h2>
-            <p>
-              Energetic individual with outstanding interpersonal, analytical and critical thinking skills.
-               I am excellent in working with others to achieve a certain objective on time and with excellence. 
-                Comfortable with constructive criticism to achieve the highest standard of work. 
-               Dedicated to providing quality care for ultimate customer satisfaction.
-                 Proven ability to establish and maintain excellent communication and relationships with workers.
-                  Well-rounded and professional team player dedicated to continuing academic pursuits at a higher level.
-                   Able to effectively self-manage during independent projects, as well as collaborate as part of a productive team. 
-          </p>
-          </div>
-          <div class="about-image">
-              <img src="images/20230525_220914p.jpg" alt="About">
-          </div>
-    </div>
-    </section>
+  <!-- Left Arrow -->
+  <button id="prev-card" class="card__btn" style="position:relative;z-index:10;margin-right:10px;">
+    <i class="fa-solid fa-chevron-left" style="font-size:32px;color:#fff;"></i>
+  </button>
 
-    <section id="resume">
-        <div class="row">
-        
-            <div class="box">
-                <h3>Education</h3>
-                <ul>
-                    <li><strong>Walter Sisulu University</strong><br>
-                        Diploma in Information and Communication Technology (Applications Development)<br>
-                        2021-2023
-                    </li>
-                    <li><strong>Graeme College High School</strong><br>
-                        Matric<br>
-                        2019
-                    </li>
-                </ul>
-            </div>
-    
-            
-            <div class="box">
-                <h3>Achievements and Key Projects</h3>
-                <ul>
-                    <li>Developed a web application for farmers to connect and share knowledge in agriculture, serving as a social media platform for experienced and aspiring farmers.</li>
-                </ul>
-            </div>
+  <!-- Card Stack -->
+  <div id="card-stack" style="position:relative;width:380px;min-height:500px;">
+    <!-- Card 1: Home -->
+    <div class="container card-flip" style="position:absolute;top:0;left:0;right:0;bottom:0;display:block;">
+      <div class="card" style="background:transparent;box-shadow:none;">
+        <div class="front">
+          <div class="card-top">
+            <p class="card-top-para">Profile</p>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"></path>
+          </svg>
+          <p class="heading">PHILANI MANCOTYWA</p>
+          <p class="follow">Application/System/Web Developer</p>
+          <div class="card__wrapper" style="margin-top:10px;">
+            <div class="card__time card__time-passed"></div>
+          </div>
+          <div class="card__timeline" style="margin-top:10px;"><progress value="100" max="100"></progress></div>
+          <div class="card__time card__time-left" style="margin-top:8px;">v3.0</div>
         </div>
-    
-        
-        <div class="row">
-            
-            <div class="box">
-                <h3>Personal Details</h3>
-                <ul>
-                    <li><strong>Age:</strong> 23</li>
-                    <li><strong>Location:</strong> Johannesburg, Gauteng</li>
-                    <li><strong>Languages:</strong> English, isiXhosa</li>
-                    <li><strong>Driver's License:</strong> No</li>
-                </ul>
-            </div>
-    
-            
-            <div class="box">
-                <h3>Contact Information</h3>
-                <ul>
-                    <li>0683700855</li>
-                    <li><a href="mailto:mancotywap@gmail.com">mancotywap@gmail.com</a></li>
-                </ul>
-            </div>
+        <div class="back">
+          <p class="heading">Follow Me</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-person-add" viewBox="0 0 16 16">
+            <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0Zm-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"></path>
+            <path d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Z"></path>
+          </svg>
+          <div class="icons" style="margin-top:10px;">
+            <a href="https://github.com/PhilaniMant" target="_blank" style="margin-right:8px;">
+              <i class="fa-brands fa-github" style="font-size:32px;color:#fff;"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/philani-mancotywa-727715297/" target="_blank" style="margin-right:8px;">
+              <i class="fa-brands fa-linkedin" style="font-size:32px;color:#fff;"></i>
+            </a>
+            <a href="https://www.instagram.com/PHILANI_MAN_T" target="_blank">
+              <i class="fa-brands fa-instagram" style="font-size:32px;color:#fff;"></i>
+            </a>
+          </div>
         </div>
+      </div>
     </div>
-    
-    <div class="container">
-        
-        <div class="row">
+    <!-- Card 2: About -->
+    <div class="container card-flip" style="position:absolute;top:0;left:0;right:0;bottom:0;display:none;">
+      <div class="card" style="background:transparent;box-shadow:none;">
+        <div class="front">
+          <div class="card-top">
             
-            <div class="box">
-                
-                <h3>Technical Proficiencies</h3>
-                <ul>
-                    <li><i class="fas fa-code"></i> Java</li>
-                    <li><i class="fas fa-code"></i> JavaScript</li>
-                    <li><i class="fas fa-code"></i> Python</li>
-                    <li><i class="fas fa-code"></i> HTML, CSS</li>
-                    <li><i class="fas fa-database"></i> Database (MySQL)</li>
-                </ul>
-            </div>
-    
-           
-            <div class="box">
-                <h3>Soft Skills</h3>
-                <ul>
-                    <li><i class="fas fa-handshake"></i> Dependability</li>
-                    <li><i class="fas fa-clock"></i> Time Management</li>
-                    <li><i class="fas fa-lightbulb"></i> Critical Thinking</li>
-                    <li><i class="fas fa-user-check"></i> Self-Awareness</li>
-                </ul>
-            </div>
-    
-            <div class="box">
-                <h3>Interests</h3>
-                <ul>
-                    <li><i class="fas fa-futbol"></i> Sports</li>
-                    <li><i class="fas fa-chalkboard-teacher"></i> Coaching</li>
-                    <li><i class="fas fa-music"></i> Music</li>
-                    <li><i class="fas fa-network-wired"></i> Networking</li>
-                </ul>
-            </div>
+          </div>
+          <div class="card__img">
+            <img src="images/20230525_220914p.jpg" alt="About" style="width:154px;height:154px;border-radius:100%;">
+          </div>
+          <div class="card__title">About</div>
+          <div class="card__subtitle">Who I Am</div>
+          <div class="card__wrapper">
+            <div class="card__time card__time-passed"></div>
+            <div class="card__timeline"><progress value="100" max="100"></progress></div>
+            <div class="card__time card__time-left"></div>
+          </div>
+          <div style="color:#B9B9B9; text-align:center; margin-top:9px; font-size:15px;">
+            Energetic individual with outstanding interpersonal, analytical and critical thinking skills.<br>
+            Excellent in working with others to achieve objectives on time and with excellence.<br>
+            Comfortable with constructive criticism to achieve the highest standard of work.<br>
+            Dedicated to providing quality care for ultimate customer satisfaction.<br>
+            Proven ability to establish and maintain excellent communication and relationships.<br>
+            Well-rounded and professional team player dedicated to continuing academic pursuits.<br>
+            Able to effectively self-manage during independent projects, as well as collaborate as part of a productive team.
+          </div>
         </div>
-    </div>     
-                     
+        <div class="back">
+          <p class="heading">More About Me</p>
+          <div style="color:#B9B9B9; text-align:center; margin-top:20px; font-size:15px;">
+            I am passionate about technology, teamwork, and continuous learning.<br>
+            <br>
+            <b>Skills:</b> Web Development, System Design, Communication, Problem Solving.
+          </div>
         </div>
-     </div>
-    </section>
-<section id="contact">
-           <div class="contact-container">
-          <h2>CONTACT ME</h2>
-          <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Mail" required>
-            <textarea rows="4" placeholder="Your Message" required></textarea>
-            <button type="submit">SUBMIT</button>
+      </div>
+    </div>
+    <!-- Card 3: Resume -->
+    <div class="container card-flip" style="position:absolute;top:0;left:0;right:0;bottom:0;display:none;">
+      <div class="card" style="background:transparent;box-shadow:none;">
+        <div class="front">
+          <div class="card-top">
+          </div>
+          <div class="card__img">
+            <i class="fa-solid fa-graduation-cap" style="font-size:80px;color:#fff;"></i>
+          </div>
+          <div class="card__title">Resume</div>
+          <div class="card__subtitle">Education & Projects</div>
+          <div class="card__wrapper">
+            <div class="card__time card__time-passed"></div>
+            <div class="card__timeline"><progress value="100" max="100"></progress></div>
+            <div class="card__time card__time-left"></div>
+          </div>
+          <div style="color:#B9B9B9; text-align:left; margin-top:20px; font-size:15px;">
+            <b>Walter Sisulu University</b><br>
+            Diploma in Information and Communication Technology (Applications Development) 2021-2023<br><br>
+            <b>Graeme College High School</b><br>
+            Matric 2019<br><br>
+            <b>Key Project:</b> Developed a web application for farmers to connect and share knowledge in agriculture.<br>
+            <b>Personal Details:</b> Age: 23 | Location: Johannesburg, Gauteng | Languages: English, isiXhosa<br>
+            <b>Contact:</b> 0683700855 | <a href="mailto:mancotywap@gmail.com" style="color:#fff;">mancotywap@gmail.com</a>
+          </div>
+        </div>
+        <div class="back">
+          <p class="heading">Skills & Interests</p>
+          <div style="color:#B9B9B9; text-align:left; margin-top:20px; font-size:15px;">
+            <b>Technical:</b> HTML, CSS, JavaScript, C#, SQL<br>
+            <b>Interests:</b> Coding, Agriculture, Community Building, Learning New Tech
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Card 4: Contact (reversed: info front, form back) -->
+    <div class="container card-flip" style="position:absolute;top:0;left:0;right:0;bottom:0;display:none;">
+      <div class="card" style="background:transparent;box-shadow:none;">
+        <div class="front">
+          <div class="card-top">
+            <p class="card-top-para">Contact</p>
+          </div>
+          <div class="card__img" style="margin-top:50px;">
+            <i class="fa-solid fa-envelope" style="font-size:80px;margin-left:36px;color:#fff;"></i>
+          </div>
+          <div class="card__title" style="margin-top:12px;">Contact Me</div>
+          <div class="card__subtitle">Let's Connect</div>
+          <div class="card__wrapper">
+            <div class="card__time card__time-passed"></div>
+            <div class="card__timeline"><progress value="100" max="100"></progress></div>
+            <div class="card__time card__time-left"></div>
+          </div>
+          <div style="color:#B9B9B9; text-align:center; margin-top:20px; font-size:15px;">
+            I'll get back to you as soon as possible.<br>
+            <br>
+            <b>Email:</b> mancotywap@gmail.com<br>
+            <b>Phone:</b> 0683700855
+          </div>
+        </div>
+        <div class="back">
+          <p class="heading">Send a Message</p>
+          <form style="margin-top:20px; display:flex; flex-direction:column; gap:10px;">
+            <input type="text" placeholder="Your Name" required style="padding:8px; border-radius:5px; border:none;">
+            <input type="email" placeholder="Your Email" required style="padding:8px; border-radius:5px; border:none;">
+            <textarea rows="4" placeholder="Your Message" required style="padding:8px; border-radius:5px; border:none;"></textarea>
+            <button type="submit" class="card__btn card__btn-play" style="margin:auto; width:120px; height:40px;">
+              <span style="color:#090909;font-weight:bold;">SUBMIT</span>
+            </button>
           </form>
         </div>
-</div>
-</div>
-</section>
-
-    <div id="chatbot-icon" class="chatbot-icon">
-        <span class="material-symbols-outlined">CB</span>
+      </div>
     </div>
-    
+  </div>
 
-    <div id="chatbot" class="chatbot" style="display: none;">
-        <header>
-            Steve Jobs
-            <span id="close-btn" class="material-symbols-outlined">close</span>
-        </header>
-        <ul id="chat-window"></ul>
-        <div class="chat-input">
-            <textarea id="chat-message" placeholder="Enter a message..."></textarea>
-            <span id="send-btn" class="material-symbols-outlined">send</span>
-        </div>
+  <!-- Right Arrow -->
+  <button id="next-card" class="card__btn" style="position:relative;z-index:10;margin-left:10px;">
+    <i class="fa-solid fa-chevron-right" style="font-size:32px;color:#fff;"></i>
+  </button>
+</div>
+
+<div id="chatbot-icon" class="chatbot-icon">
+    <span class="material-symbols-outlined">CB</span>
+</div>
+
+<div id="chatbot" class="chatbot" style="display: none;">
+    <header>
+        Steve Jobs
+        <span id="close-btn" class="material-symbols-outlined">close</span>
+    </header>
+    <ul id="chat-window"></ul>
+    <div class="chat-input">
+        <textarea id="chat-message" placeholder="Enter a message..."></textarea>
+        <span id="send-btn" class="material-symbols-outlined">send</span>
     </div>
+</div>
 
 <footer>
     <p>© 2024 Capaciti</p>
 </footer>
 <script src="script.js"></script>
 </body>
-
 </html>

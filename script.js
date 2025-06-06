@@ -121,3 +121,26 @@ window.addEventListener('scroll', setActiveLink);
 // Call the function on page load to set the correct initial state
 document.addEventListener('DOMContentLoaded', setActiveLink);
 
+document.addEventListener('DOMContentLoaded', function() {
+  const cards = document.querySelectorAll('#card-stack .container');
+  let current = 0;
+
+  function showCard(index) {
+    cards.forEach((card, i) => {
+      card.style.display = (i === index) ? 'block' : 'none';
+    });
+  }
+
+  document.getElementById('prev-card').onclick = function() {
+    current = (current - 1 + cards.length) % cards.length;
+    showCard(current);
+  };
+  document.getElementById('next-card').onclick = function() {
+    current = (current + 1) % cards.length;
+    showCard(current);
+  };
+
+  // Initialize
+  showCard(current);
+});
+
