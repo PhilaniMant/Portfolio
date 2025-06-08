@@ -115,6 +115,27 @@ function setActiveLink() {
     });
 }
 
+document.getElementById('settings-btn').addEventListener('click', function(e) {
+  e.stopPropagation();
+  const dropdown = document.getElementById('theme-dropdown');
+  dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+});
+document.addEventListener('click', function() {
+  document.getElementById('theme-dropdown').style.display = 'none';
+});
+document.querySelectorAll('.theme-option').forEach(opt => {
+  opt.addEventListener('click', function() {
+    if (this.dataset.theme === 'dark') {
+      document.body.classList.add('dark-theme');
+      document.body.classList.remove('light-theme');
+    } else {
+      document.body.classList.add('light-theme');
+      document.body.classList.remove('dark-theme');
+    }
+    document.getElementById('theme-dropdown').style.display = 'none';
+  });
+});
+
 // Call the function when the page is scrolled
 window.addEventListener('scroll', setActiveLink);
 
@@ -142,5 +163,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Initialize
   showCard(current);
+});
+
+// Card navigation by navbar icons
+document.addEventListener('DOMContentLoaded', function() {
+  const cardStack = document.getElementById('card-stack');
+  const cards = cardStack.querySelectorAll('.container.card-flip');
+  // Home, Person, Graduation buttons (first three in navbar)
+  const navbarButtons = document.querySelectorAll('.button-container .button');
+  // Show card by index, hide others
+  function showCard(idx) {
+    cards.forEach((card, i) => {
+      card.style.display = i === idx ? 'block' : 'none';
+      // Reset flip state
+      const cardInner = card.querySelector('.card');
+      if (cardInner) cardInner.style.transform = '';
+    });
+  }
+  // Home icon
+  navbarButtons[0].addEventListener('click', () => showCard(0));
+  // Person icon
+  navbarButtons[1].addEventListener('click', () => showCard(1));
+  // Graduation cap icon
+  navbarButtons[2].addEventListener('click', () => showCard(2));
 });
 
